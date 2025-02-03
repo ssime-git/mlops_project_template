@@ -1,0 +1,19 @@
+# Environment variables
+#.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# MLflow
+mlruns/
+
+# Data
+data/
+
+# VSCode
+.vscode/
