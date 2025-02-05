@@ -16,5 +16,5 @@ if __name__ == "__main__":
     hello_flow.serve(
         name="hello-deployment",
         version="1",
-        work_queue_name="default"
+        work_queue='default'
     )
