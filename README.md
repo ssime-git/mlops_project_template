@@ -59,3 +59,10 @@ mlflow:
       context: .
       target: development
     command: mlflow server --host 0.0.0.0 --port 5001
+
+# Create deployment
+
+```sh
+make deploy
+make run
+```

@@ -12,9 +12,4 @@ def hello_flow():
 
 
 if __name__ == "__main__":
-    # Déployer le flow avec la nouvelle syntaxe
-    hello_flow.serve(
-        name="hello-deployment",
-        version="1",
-        work_queue='default'
-    )
+    hello_flow()
