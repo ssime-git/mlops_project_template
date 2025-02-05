@@ -14,10 +14,15 @@ RUN apt-get update && apt-get install -y \
 # Development image
 FROM base as development
 
-# Install development tools
+# Install development tools and Docker CLI
 RUN apt-get update && apt-get install -y \
     vim \
+    docker.io \
     && rm -rf /var/lib/apt/lists/*
+
+# Add Docker group and permissions
+RUN groupadd -g 999 docker || true && \
+    usermod -aG docker root
 
 # Python dependencies
 COPY requirements.txt .
